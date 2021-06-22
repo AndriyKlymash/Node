@@ -8,27 +8,6 @@ const pathGirl = path.join(__dirname, 'girls');
 const pathBoys = path.join(__dirname, 'boys');
 
 
-// fs.mkdir(`${filePathGroup18, filePathGroup20}`, {recursive: true}, (err)=>{
-//     if(err){
-//         console.log('************');
-//         console.log(err);
-//         console.log('************');
-//     }
-// })
-
-
-// fs.readdir(filePathGroup18, (err, files) => {
-//     for (const file of files) {
-//         fs.rename(path.join(filePathGroup18, file), path.join(filePathGroup20, file), () => { });
-//     }
-// });
-//
-// fs.readdir(filePathGroup20, (err, files) => {
-//     for (const file of files) {
-//         fs.rename(path.join(filePathGroup20, file), path.join(filePathGroup18, file), () => { });
-//     }
-// });
-
 const mover = (path1, path2) => {
     fs.readdir(path1, (err, files) => {
         for (const file of files) {
